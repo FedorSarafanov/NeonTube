@@ -1,0 +1,39 @@
+\documentclass[tikz]{standalone}
+\newcommand*{\source}{/home/osabio/tex/templates}
+\input{\source/head-img.tex}
+
+\begin{document}
+	\begin{tikzpicture}[scale=0.95]
+	    \begin{axis}[
+		grid=both,
+		scale=2.35,
+		% xmode=log,
+		grid style={line width=.1pt, draw=gray!10},
+		major grid style={line width=.2pt,draw=gray!50},
+		% axis lines=middle,
+		minor tick num=5,
+		% xmin=1000, 
+		% xmax=11,
+	    xlabel style={below right, xshift=1em},
+	    ylabel style={above left},
+		% ymin=0,
+		% ymax=5,
+		xlabel={$R$, кОм},
+		ylabel={$K$},
+		tick style={very thick},
+		% legend style={
+		% at={(rel axis cs:0,1)},
+		% anchor=north west,draw=none,inner sep=0pt,fill=gray!10}
+	]
+        \addplot +[mark=*, mark size=0.3em, ] table [x=R, y=K] {data/triod_r.csv};
+        % \addlegendentry{$U_c=-7$ В}
+
+
+        % \addplot [samples=100, domain=0:52] {0.05215*e^(-(x-27)^2/2/(7.5)^2)};
+        % \addlegendentry{$\sigma_k=7.5$}
+
+        % \addplot [samples=100, domain=0:52, dashdotdotted] {0.05215*e^(-(x-27)^2/2/(7.649)^2)};
+        % \addlegendentry{$\sigma_k=7.649$}
+	    \end{axis}
+	\end{tikzpicture}	
+\end{document}

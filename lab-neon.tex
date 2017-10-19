@@ -1,0 +1,166 @@
+\documentclass[a4paper,12pt]{extarticle}%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Маргарита 21:15
+% я вроде бы не отношусь к людям открыто(я ведь правильно тебя поняла?), не знаю, почему ты так решил
+% ну да ладно. если для тебя это и правда важно, постараюсь быть с тобой более открытой
+% мне бы просто не хотелось, чтобы мое доверие обманывали
+\def\source{/home/osabio/tex/templates}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{\source/head.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\labauthor{Сарафанов Ф.Г.}
+\def\labauthors{Сарафанов Ф.Г.}
+\def\labnumber{222}
+\def\labtheme{Изучение разряда неоновой лампы}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{\source/math_left-of-equation.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\geometry		
+	{
+		left			=	2cm,
+		right 			=	2cm,
+		top 			=	3cm,
+		bottom 			=	3cm,
+		bindingoffset	=	0cm
+	}
+\input{\source/lab_colontitle.tex}
+
+\begin{document}
+
+\input{\source/lab_title-page.tex} %Титульная страница
+
+\tableofcontents
+\newpage
+
+\section*{Введение} % (fold)
+\addcontentsline{toc}{section}{Введение}
+\label{sec:input}
+
+Целью данной работы является успешная сдача зачета по общефизу
+
+\newpage
+\section{Исследование неоновой лампы}
+\subsection{Снятие ВАХ неоновой лампы}
+
+\begin{table}[H]
+	    \caption{Снятие вольт-амперной характеристики (ВАХ) неоновой лампы}
+	    \label{tab:diod}
+	    \pgfkeys{/pgf/number format/.cd,
+		fixed,  1000 sep={\,}}
+\newlength\Colsep
+\setlength\Colsep{10pt}
+\pgfplotstableset{
+	multicolumn names, % allows to have multicolumn names
+	col sep=tab, % the seperator in our .csv file
+	precision=3,
+	% fixed zerofill, 
+	columns/u/.style={
+	column name={$U$, В},
+	},
+	columns/i/.style={
+	column name={$I$, мА},
+	},
+	empty cells with={\textbf{--}},
+	every head row/.style={
+	before row={\toprule},
+	after row={
+		\midrule}
+		},
+	every last row/.style={after row=\bottomrule},
+	every row/.style={after row=\midrule}, 
+	columns={u,i},		
+	dec sep align,
+	% dec zerofill
+	% fixed,fixed zerofill,
+	% precision=2
+	}
+\noindent\begin{minipage}[t][][t]{\textwidth}
+\begin{minipage}[t][][b]{0.2\textwidth}
+	    \pgfplotstabletypeset[
+		% skip rows between index={0}{50},
+		skip rows between index={25}{500},
+	    ]{data/vax.csv}
+\end{minipage}%\hfill
+\begin{minipage}[t][][b]{0.2\textwidth}
+	    \pgfplotstabletypeset[
+			skip rows between index={0}{25},
+			skip rows between index={50}{500},
+	    ]{data/vax.csv}
+\end{minipage}%
+\begin{minipage}[t][][b]{0.2\textwidth}
+	    \pgfplotstabletypeset[
+			skip rows between index={0}{50},
+			skip rows between index={75}{500},
+	    ]{data/vax.csv}
+\end{minipage}%
+\begin{minipage}[t][][b]{0.2\textwidth}
+	    \pgfplotstabletypeset[
+			skip rows between index={0}{75},
+			skip rows between index={100}{500},
+	    ]{data/vax.csv}
+\end{minipage}%
+\begin{minipage}[t][][b]{0.2\textwidth}
+	    \pgfplotstabletypeset[
+			skip rows between index={0}{100},
+			skip rows between index={125}{500},
+	    ]{data/vax.csv}
+\end{minipage}%
+\end{minipage}		
+
+\end{table}
+
+\begin{figure}[tb]
+	\centering
+	\begin{tikzpicture}[scale=0.95]
+		    \begin{axis}[
+			grid=both,
+			scale=2.35,
+			% xmode=log,
+			grid style={line width=.1pt, draw=gray!10},
+			major grid style={line width=.2pt,draw=gray!50},
+			% axis lines=middle,
+			minor tick num=5,
+			% xmin=1000, 
+			% xmax=11,
+			% ymin=0,
+			% ymax=5,
+			xlabel={$U$, В},
+			ylabel={$I$, мА},
+			tick style={very thick},
+		    % scale=0.5,
+		    grid=both,
+		    grid style={line width=1pt, draw=black!20},
+		    major grid style={line width=.5pt,draw=black!90},
+		    minor y tick num=4,
+		    minor x tick num=4,   
+		    xtick distance=10,
+		    ytick distance=1,
+		    % ymax = 1.8,
+		    xmin = 100,
+		    ymin = 0,
+		    % xmax = 40,
+		    % ticklabel style={font=\tiny,fill=white},    
+		    axis lines=middle, 	
+		    xlabel style={below right, xshift=1em},
+		    ylabel style={above left},		    		
+			% legend style={
+			% at={(rel axis cs:0,1)},
+			% anchor=north west,draw=none,inner sep=0pt,fill=gray!10}
+		]
+	        \addplot +[mark=*, mark size=0.1em, ] table [x=u, y=i] {data/vax.csv};
+	        % \addlegendentry{$U_c=-7$ В}
+
+
+	        % \addplot [samples=100, domain=0:52] {0.05215*e^(-(x-27)^2/2/(7.5)^2)};
+	        % \addlegendentry{$\sigma_k=7.5$}
+
+	        % \addplot [samples=100, domain=0:52, dashdotdotted] {0.05215*e^(-(x-27)^2/2/(7.649)^2)};
+	        % \addlegendentry{$\sigma_k=7.649$}
+		    \end{axis}
+		\end{tikzpicture}	
+	\caption{Caption here}
+	\label{fig:figure1}
+\end{figure}
+
+\end{document}

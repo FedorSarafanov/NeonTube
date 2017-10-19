@@ -1,0 +1,506 @@
+\documentclass[a4paper,12pt]{extarticle}%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Мне (да в прочем, и всем) свойственно идеализировать людей, и иногда не хочется, чтобы они были другими. А они другие, и все очень сложно получается)
+\def\source{/home/osabio/tex/templates}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{\source/head.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\labauthor{Сарафанов Ф.Г.}
+\def\labauthors{Сарафанов Ф.Г.}
+\def\labnumber{219}
+\def\labtheme{Исследование электронных ламп диода и триода}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{\source/math_left-of-equation.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\geometry		
+	{
+		left			=	2cm,
+		right 			=	2cm,
+		top 			=	3cm,
+		bottom 			=	3cm,
+		bindingoffset	=	0cm
+	}
+\input{\source/lab_colontitle.tex}
+
+% \pgfplotstableset{
+%     columns/mat/.style={%
+%     string type,
+%     column type=r,% 
+%     column name=\textsc{Груз}%
+%     },
+%     columns/m1/.style={column name=$m_1\text{, г}$},
+%     columns/m2/.style={column name=$m_2\text{, г}$},
+%     columns/m3/.style={column name=$m_3\text{, г}$},
+%     columns/m/.style={column name=$m\text{, г}$},
+%     columns/dr/.style={column name=$\Delta{d}\text{, мм}$},
+%     columns/d/.style={column name=$<d>$},
+%     columns/r/.style={column name=$<r>$},
+%     empty cells with={--}, % replace empty cells with ’--’
+%     every head row/.style={before row=\toprule,after row=\midrule},
+%     every last row/.style={after row=\bottomrule}
+%   }
+
+
+\begin{document}
+
+\input{\source/lab_title-page.tex} %Титульная страница
+
+\tableofcontents
+\newpage
+
+\section*{Введение} % (fold)
+\addcontentsline{toc}{section}{Введение}
+\label{sec:input}
+
+Целью данной работы является изучение работы простейших электронных ламп -- диода и триода. В установке используется одна половина двойного триода 6Н8С. Путем соединения управляющей сетки с анодом триода можно исследовать эту лампу в качестве диода. 
+
+\newpage
+\section{Исследование лампы диода}
+\subsection{Снятие статической характеристики диода}
+
+\begin{table}[H]
+	    \caption{Снятие вольт-амперной характеристики (ВАХ) диода}
+  \begin{minipage}{.35\textwidth}
+	  \begin{center}
+	    \label{tab:diod}
+	    \pgfkeys{/pgf/number format/.cd,
+		fixed,  1000 sep={\,}}
+	    \pgfplotstabletypeset[
+	      multicolumn names, % allows to have multicolumn names
+	      col sep=tab, % the seperator in our .csv file
+	      precision=3,
+	      % fixed zerofill, 
+	      columns/Ua/.style={
+			column name={$U_{a}$, В},
+			},
+	      columns/I/.style={
+			column name={$I$, мА},
+			},
+		empty cells with={\textbf{--}},
+	      every head row/.style={
+			before row={\toprule},
+			after row={
+				\midrule}
+				},
+		every last row/.style={after row=\bottomrule},
+		every row/.style={after row=\midrule}, 
+		columns={Ua,I},	
+	    ]{data/diod_vax.csv}
+	  \end{center}
+  \end{minipage} %\quad
+    \begin{minipage}{.6\textwidth}
+    \centering
+    \includestandalone[width=.95\textwidth]{img/diod_vax}
+  \end{minipage}
+	\end{table}
+
+Используя приближенное равенство
+\begin{equation}
+	S=\frac{\Delta I_a}{\Delta U_a},
+\end{equation}
+найдем значение крутизны в нескольких точках кривой:
+\begin{equation}
+	S_{14-16}=\frac{57.4-48.9}{2}=4.25 \text{ мОм}^{-1}
+\end{equation}
+\begin{equation}
+	S_{16-18}=\frac{66.2-57.4}{2}=4.4 \text{ мОм}^{-1}
+\end{equation}
+
+\newpage
+\section{Исследование лампы триода}
+\subsection{Статические характеристики триода}
+\subsubsection{Расчет предельной мощности}
+В соответствии с максимальной рассеиваемой мощностью лампы рассчитали максимально допустимый ток для напряжений в диапазоне $[10\ldots240]$ вольт.
+\begin{equation}
+	P_{max}=U_a\cdot I_a=\const=2.5 \text{ Вт}
+\end{equation}
+\begin{equation}
+	I_a^{max}=\frac{P_{max}}{U_a}=\frac{2.5}{U_a}
+\end{equation}
+\begin{figure}[H]
+	\centering
+	\includestandalone[width=.95\textwidth]{img/triode_p}	
+	\caption{Кривая максимально допустимого тока -- $I_a=I_a(U_a)$}
+	\label{fig:label} 
+\end{figure}
+\newpage
+\subsubsection{Снятие анодной характеристики}
+
+\begin{figure}[H]
+	\centering
+	% \input{img/triode_ucc}
+	\includestandalone[width=.95\textwidth]{img/triode_ucc}
+	\caption{Анодная характеристика триода -- $I_a=I_a(U_a)|_{U_c=\const}$} 
+	\label{fig:label}
+\end{figure}
+
+Были сняты 4 анодные характеристики для разных напряжений на сетке: -7, -3, +1 и +5 вольт. 
+
+Для каждой из характеристик методом касательной подсчитали угловой коэффициент $R^{-1}_i$ на линейном участке графика. Отсюда внутреннее сопротивление триода составляет
+\begin{equation}
+	R_i=4.76\ldots 9.09 \text{ мОм}
+\end{equation}
+
+Снятие характеристики завершали при приближении к предельной мощности, следя за заранее рассчитанным предельным значением тока из таблицы (табл. \ref{tab:anod}). 
+
+\begin{table}[H]
+  \begin{center}
+    \caption{Снятие анодной характеристики триода}
+    \label{tab:anod}
+    \pgfkeys{/pgf/number format/.cd,
+	fixed, precision=3, 1000 sep={\,}}
+    \pgfplotstabletypeset[
+      multicolumn names, % allows to have multicolumn names
+      col sep=tab, % the seperator in our .csv file
+      columns/Ua/.style={
+		column name={$U_{a}$, В},
+		},
+      columns/m7/.style={
+      string replace={0.000}{},
+      dec sep align,
+		column name={$I_a|_{U_{c}=-7\text{ В}}$},
+		},
+      columns/m3/.style={
+      string replace={0.000}{},
+      dec sep align,
+		column name={$I_a|_{U_{c}=-3\text{ В}}$},
+		},
+      columns/1/.style={
+      string replace={0.000}{},
+      dec sep align,
+		column name={$I_a|_{U_{c}=+1\text{ В}}$},
+		},
+      columns/5/.style={
+      	string replace={0.000}{},
+      	dec sep align,
+		column name={$I_a|_{U_{c}=+5\text{ В}}$},
+		},
+      columns/I/.style={
+      	dec sep align,
+		column name={$I_{max}(U_a)$, мА},
+		},
+	empty cells with={\textbf{--}},
+      every head row/.style={
+		before row={\toprule},
+		after row={
+			\midrule}
+			},
+	every last row/.style={after row=\bottomrule},
+	every row/.style={after row=\midrule}, 
+	columns={Ua,m7,m3,1,5,I},	
+    ]{data/triod_vax.csv}
+  \end{center}
+\end{table}
+
+\newpage
+\subsubsection{Снятие сеточной характеристики}
+\begin{figure}[h!]
+	\centering
+	\includestandalone[width=.95\textwidth]{img/triode_uac}	
+	\caption{Анодно-сеточная характеристика триода -- $I_a=I_a(U_c)|_{U_a=\const}$}
+	\label{fig:label} 
+\end{figure}
+
+Были сняты 4 анодно-сеточных характеристик для разных напряжений на аноде: 70, 90, 110 и 130 вольт. 
+
+Для каждой из характеристик методом касательной подсчитали коэффициент крутизны $S$ на линейном участке графика. 
+\begin{gather}
+	S_{70}=2.63 \text{ мОм}^{-1}\\
+	S_{90}=2.88 \text{ мОм}^{-1}\\
+	S_{110}=2.91 \text{ мОм}^{-1}\\
+	S_{130}=3.08 \text{ мОм}^{-1}
+\end{gather}
+
+Снятие характеристики завершали при приближении к предельной мощности, следя за заранее рассчитанным предельным значением тока из таблицы (табл. \ref{tab:anod}). 
+\newpage
+\begin{table}[H]
+	\begin{center}
+	\caption{Снятие анодно-сеточной характеристики триода}
+	\label{tab:a-s}
+
+	\pgfkeys{/pgf/number format/.cd,
+	fixed, precision=3, 1000 sep={\,}} 
+	% Три знака после запятой, три разряда разделять малым пробелом
+
+	\pgfplotstabletypeset[
+		multicolumn names,
+		col sep=tab, 
+		columns/U_c/.style={
+			column name={$U_{c}$, В},
+			dec sep align,
+		},
+		columns/70/.style={
+			string replace={0.000}{},
+			dec sep align,
+			column name={$I_a|_{U_{a}=70\text{ В}}$},
+		},
+		columns/90/.style={
+			string replace={0.000}{},
+			dec sep align,
+			column name={$I_a|_{U_{a}=90\text{ В}}$},
+		},
+		columns/110/.style={
+			string replace={0.000}{},
+			dec sep align,
+			column name={$I_a|_{U_{a}=110\text{ В}}$},
+		},
+		columns/130/.style={
+			string replace={0.000}{},
+			dec sep align,
+			column name={$I_a|_{U_{a}=130\text{ В}}$},
+		},
+		columns/I/.style={
+			column name={$I_{max}(U_a)$, мА},
+		},
+		empty cells with={--},
+		every head row/.style={
+			before row={\toprule},
+			after row={\midrule}
+		},
+		every last row/.style={
+			after row=\bottomrule
+		},
+		columns={U_c,70,90,110,130},	
+	]{data/triod_vax_2.csv}
+	\end{center}
+\end{table}
+
+Рассчитаем статический коэффициент усиления $\mu$ по средним значениям параметров $S$ и $R_i$:
+
+\begin{equation}
+	\mu=R_i\cdot S=7.14\cdot2.88=20.57
+\end{equation}
+
+\newpage
+\section{Определение коэффициента усиления усилителя}
+
+\subsection{Изучение АЧХ усилителя}
+
+Подав на вход усилителя сигнал амплитудой 100 мВ с генератора ГЗ-112, изменяя частоту, сняли зависимость выходной амплитуды от частоты (АЧХ) и рассчитали коэффициент усиления для каждого значения частоты. 
+
+На частоте порядка $100$ кГц начинает наблюдаться падение выходной амплитуды (срыв усиления), на частоте $220$ кГц коэффициент усиления падает вдвое.
+
+На частоте более $1$ мГц усилитель перестает выполнять функцию усиления (коэффициент усиления меньше единицы).
+
+\begin{table}[h!]
+	\begin{center}
+	\caption{Снятие амплитудно-частотной характеристики усилителя}
+	\label{tab:a-s}
+
+	\pgfkeys{/pgf/number format/.cd,
+		fixed, 
+		precision=3, 
+		1000 sep={\,}, 	
+		sci generic={
+			mantissa sep=\times,
+			exponent={10^{#1}}
+		},
+	} 
+	% Три знака после запятой, три разряда разделять малым пробелом
+
+	\pgfplotstabletypeset[
+		multicolumn names,
+		col sep=tab,
+		%
+		columns/mu/.style={
+			sci,
+			sci sep align,
+%
+			column name={$\nu$, Гц},
+		},
+		columns/2kl/.style={
+			column name={$2U_\text{вых}$, клеток},
+			dec sep align,
+		},	
+		columns/m/.style={
+			column name={Множитель},
+			dec sep align,
+		},		
+		columns/u/.style={
+			column name={$U_\text{вых}$, мВ},
+			dec sep align,
+		},	
+		columns/K/.style={ 
+			column name={$K$},
+			dec sep align,
+		},						
+		empty cells with={--},
+		every head row/.style={
+			before row={\toprule},
+			after row={\midrule}
+		},
+		every last row/.style={
+			after row=\bottomrule
+		},
+		columns={mu,2kl,m,u,K},	
+	]{data/triod_fr.csv}
+	\end{center}
+\end{table}
+
+\begin{figure}[H]
+	\centering
+	\includestandalone[width=.95\textwidth]{img/k_nu}	
+	\caption{Зависимость коэффециента усиления от частоты входного сигнала}
+	\label{fig:ahx} 
+\end{figure}
+
+\newpage
+\subsection{Зависимость усиления от сопротивления нагрузки}
+
+На частоте сигнала $1$ кГц измерили амплитуду выходного сигнала последовательно для всех сопротивлений $R_a\in[0.5\ldots1000]$ кОм:
+
+\begin{table}[H]
+	\begin{center}
+	\caption{Снятие зависимости динамического коэффециента усиления от сопротивления нагрузки $R_a$}
+	\label{tab:a-s}
+
+	\pgfkeys{/pgf/number format/.cd,
+	fixed, precision=3, 1000 sep={\,}} 
+	% Три знака после запятой, три разряда разделять малым пробелом
+
+	\pgfplotstabletypeset[
+		multicolumn names,
+		col sep=tab,
+		%
+		columns/R/.style={
+			% sci,
+			dec sep align,
+			column name={$R_a$, кОм},
+		},
+		columns/2kl/.style={
+			column name={$2U_\text{вых}$, клеток},
+			dec sep align,
+		},	
+		columns/m/.style={
+			column name={Множитель},
+			dec sep align,
+		},		
+		columns/u/.style={
+			column name={$U_\text{вых}$, мВ},
+			dec sep align,
+		},	
+		columns/K/.style={ 
+			column name={$K$},
+			dec sep align,
+		},						
+		empty cells with={--},
+		every head row/.style={
+			before row={\toprule},
+			after row={\midrule}
+		},
+		every last row/.style={
+			after row=\bottomrule
+		},
+		columns={R,2kl,m,u,K},	
+	]{data/triod_r.csv}
+	\end{center}
+\end{table}
+
+\begin{figure}[H]
+	\centering
+	\includestandalone[width=.99\textwidth]{img/k_R}	
+	\caption{Зависимость коэффициента усиления от сопротивления нагрузки}
+	\label{fig:ahx} 
+\end{figure}
+
+Максимальный коэффициент усиления достигается при $R_a=200$ кОм и равен $17$, далее рост усиления прекращается и наблюдается спад усиления.
+
+Это соответствует тому, что при увеличении $R_a$ рабочая точка на динамической анодно-сеточной характеристике смещается ближе к основанию, где $R_i$ возрастает, а $\mu$ уменьшается. 
+
+\begin{equation}
+	\label{eq:s2}
+	S_d=\frac
+	{  
+		S_i
+	}
+	{
+		1+\frac{R_a}{R_i}
+	}
+\end{equation}
+
+Из формулы следует, что динамический коэффициент не может превзойти статический. Практически динамический коэффициент оказался меньше статического примерно в два раза.
+
+
+\newpage
+\subsection{Связь динамической и статической крутизны}
+По определению, коэффициенты крутизны -- статический $S_i$ и динамический $S_d$, а также внутреннее сопротивление триода $R_i$ запишутся как
+\begin{equation}
+	S_d=\frac{dI_a}{dU_c}, \quad
+	R_i=\frac{dU_a}{dI_a},	\quad
+	S_i=\frac{\partial I_a}{\partial U_c}
+\end{equation}
+Из закона Ома для цепи источника анода следует
+\begin{equation}
+	\label{eq:om}
+	U_a=\varepsilon_a-I_a R_a
+\end{equation}
+Тогда дифференциал $U_a$ будет
+\begin{equation}
+	dU_a=-dI_aR_a
+\end{equation}
+Из формулы (\ref{eq:om}) можно выразить анодный ток
+\begin{equation}
+	I_a=\frac{E_a}{R_a}-\frac{U_a}{R_a}
+\end{equation}
+И найти его полный дифференциал:
+\begin{equation}
+	dI_a=
+	\frac{\partial I_a}{\partial U_c}dU_c+
+	\frac{\partial I_a}{\partial U_a}dU_a=
+	S_i\cdot dU_c+\frac{1}{R_i}dU_a
+\end{equation}
+Тогда после несложных преобразований
+\begin{equation}
+	\frac{dI_a}{dU_c}=
+	S_i+
+	\frac{1}{R_i}\frac{dU_a}{dU_c}=
+	S_i-
+	\frac{R_a}{R_i}\frac{dI_a}{\cdot dU_c}=
+	S_i-\frac{R_a}{R_i}S_d
+\end{equation}
+И окончательный результат
+\begin{equation}
+	S_d
+	\left[
+		1+\frac{R_a}{R_i}
+	\right]
+	=S_i
+\end{equation}
+\begin{equation}
+	\label{eq:s}
+	S_d=\frac
+	{  
+		S_i
+	}
+	{
+		1+\frac{R_a}{R_i}
+	}
+\end{equation}
+Из полученной формулы (\ref{eq:s}) следует, что динамическая крутизна будет всегда меньше статической.
+
+% \subsection{Принципиальная схема включения триода в режиме усиления}
+
+% \begin{figure}[h!]
+% 	\centering
+% 	% \vspace{0.7cm}
+% 	\includestandalone[width=.75\textwidth]{img/chem3}
+% 	\caption{Триод в режиме усиления}
+% 	\label{fig:figure1}
+% \end{figure}
+
+
+
+
+
+% \begin{figure}[h!]
+% 	\centering
+% 	% \input{img/triode_ucc}
+% 	\includestandalone[width=.95\textwidth]{img/diod_vax}
+% 	\caption{Вольт-амперная характеристика диода -- $I(U)$} 
+% 	\label{fig:label}
+% \end{figure}
+
+\end{document}
