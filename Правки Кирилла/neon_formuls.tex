@@ -1,0 +1,140 @@
+\documentclass[a4paper]{article}
+
+\usepackage{mdframed}
+
+\usepackage{geometry}
+\usepackage[english, russian]{babel}
+\usepackage{cmap}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[pdftex]{graphicx}
+{\usepackage{tikz}
+	\usepackage
+	{
+			amssymb,
+		amsfonts,
+		amsmath,
+		amsthm,
+		wrapfig,
+		makecell,
+		multirow,
+		indentfirst,
+		ulem,
+		subcaption,
+		float,
+		caption,
+		csvsimple,
+		color,
+		booktabs,
+		pgfplots,
+		pgfplotstable,
+		fancyhdr,
+		cmap,
+		esdiff
+	}  
+
+\usepackage{esint}
+\usetikzlibrary{%
+    decorations.pathreplacing,%
+    decorations.pathmorphing%
+}
+\begin{document}
+\begin{equation}
+\label{eq:1}
+	\diff{U}{t}+I(V)=\frac{\mathcal{E}-U}{R}
+\end{equation}
+ , где I(U)- ток в лампе
+
+ Рассмотрим стационарный режим (напряжение U на конденсаторе постоянно). 
+ Сила тока в таком случае определяется уравнением
+\begin{equation}
+\label{eq:2}
+I_{\text{ст}}=\frac{\mathcal{E}-U}{R}
+\end{equation}
+%график бы сюда вставить из методички
+Стационарный режим работы схемы определяется путём совместного решения уравнения (\ref{eq:2}) и уравнения $I=I(U)$, описывающего ВАХ лампы. Очевидно, что точка пересечения существует не при всех R. Случай, когда
+
+\begin{center}
+$R=R_{\text{кр}}=\frac{\mathcal{E}-U}{I_{\text{г}}}$
+\end{center}
+
+является критическим, при дальнейшем увеличении сопротивления R стационарный режим оказывается невозможным.
+Именно в этом случае $(R>R_{\text{кр}})$ в системе устанавливаются колебания.
+
+%текст из методички
+
+Рассмотрим, как происходит колебательный процесс. Пусть вначале конденсатор не заряжен. При включении схемы он начнет заряжаться через сопротивление R, напряжение U при этом будет увеличиваться. Как только оно достигнет напряжения зажигания $U_{\text{з}}$, газ в лампе начнет проводить ток, причем прохождение тока через лампу сопровождается разрядкой конденсатора. Действительно, нагрузочная прямая в этом случае не пересекается с характеристикой лампы, и значит, батарея $\mathcal{E}$, включенная через сопротивление R, не может поддерживать необходимую для горения лампы величину тока. Пока лампа горит, конденсатор разряжается, и напряжение на нем падает. Когда оно достигнет напряжения гашения $U_{\text{г}}$, лампа перестанет проводить ток, и конденсатор вновь начнет заряжаться. Очевидно, амплитуда колебаний равна $U_{\text{з}}-U_{\text{г}}$. Как ясно из предыдущего, условие возникновения колебаний имеет вид
+
+\begin{center}
+$R>R_{\text{кр}}=\frac{\mathcal{E}-U}{I_{\text{г}}}$
+\end{center}
+Вычеслим период колебаний. Полное время одного колебания T будет складываться из времени зарядки $\tau_1$ и времени зарядки $\tau_2$. Во время зарядки конденсатора лампа не горит (и врут календари), ток через нее $I(V)=0$, и уравнение (\ref{eq:2}) принимает вид
+\begin{equation}
+\label{eq:3}	
+	RC\diff{U}{t}=\mathcal{E}-U
+	\end{equation}
+Если отсчитывать время от момента гашения лампы, то 
+\begin{center}
+$U(t=0)=U_{\text{г}}$,
+	\end{center}
+и уравнение (\ref{eq:2}) имеет решение
+\begin{equation}
+	U(t)= \mathcal{E}-(\mathcal{E}-U_{\text{г}}) \exp{\left[- \frac{t}{RC} \right] }
+	\end{equation}
+Отсюда получаем время зарядки
+\begin{equation}
+\label{tau:1}
+	\tau_1=RC\cdot \ln \frac {\mathcal{E}-U_{\text{г}}} 	{\mathcal{E}-U_{\text{з}}}
+	\end{equation}
+Мы будем представлять ВАХ лампы в виде:
+
+
+\begin{center}
+$I(U)=\frac{U-U_0}{R_0}$
+	\end{center}
+
+При этом уравнение (\ref{eq:1}) примет вид
+\begin{equation}
+C\diff{U}{t}+\frac{U-U_0}{R_0} = \frac{\mathcal{E}-U}{R}
+	\end{equation}
+Переобозначим 
+\begin{equation}
+\label{eq:3}
+\frac{1}{\rho}=\frac{1}{R}+\frac{1}{R_0}
+	\end{equation}
+С учётом (\ref{eq:3}) получим
+\begin{equation}
+	C \diff{U}{t} +U \left( \frac{1}{R}+\frac{1}{R_0} \right)= \left( \frac{\mathcal{E}}{R}+\frac{U_0}{R_0}\right)
+	\end{equation}
+
+\begin{equation}
+	\label{eq:4}
+	\rho C \diff{U}{t}+U= \rho \left( \frac{\mathcal{E}}{R}+\frac{U_0}{R_0}\right)
+	\end{equation}
+Будем полагать, что при $t=0$ напряжение $U=U_{\text{з}}$. Решая линейное неоднородное дифференциальное уравнение (\ref{eq:4}), получаем:
+\begin{equation}
+	U(t)=\rho \left(\frac{\mathcal{E}}{R}+\frac{U_0}{R_0} \right)+ \left[U_{\text{з}}- \rho\left(\frac{\mathcal{E}}{R}+\frac{U_0}{R_0} \right)\right]\exp{\left( - \frac{t}{\rho C} \right)} 
+\end{equation}
+За время $t=\tau_2$ напряжение упадет до $U_{\text{г}}$:
+\begin{equation}
+	U_{\text{г}}=\rho \left(\frac{\mathcal{E}}{R}+\frac{U_0}{R_0} \right)+ \left[U_{\text{з}}- \rho\left(\frac{\mathcal{E}}{R}+\frac{U_0}{R_0} \right)\right]\exp{\left( - \frac{\tau_2}{\rho C} \right)} 
+\end{equation}
+
+И, окончательно, это нам даст время разрядки 
+\begin{equation}
+\label{tau:2}
+	\tau_2 =  \rho C \ln { 
+	\frac{(U_{\text{з}}  -  U_0) R+ (U_{\text{з}})}
+	{(U_{\text{г}}  -  U_0) R+ (U_{\text{г}})}
+	}
+\end{equation}
+Таким образом, мы, зная из уравнений (\ref{tau:1}) и (\ref{tau:2}) соответственно $\tau_1$ и $\tau_2$, сможем найти период колебаний
+\begin{center}
+$T=\tau_1+\tau_2$
+\end{center}
+\end{document}
+
+\begin{equation}
+	
+	
+\end{equation}
