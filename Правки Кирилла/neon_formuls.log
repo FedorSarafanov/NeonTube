@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.22)  25 OCT 2017 22:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.22)  26 OCT 2017 20:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1176,28 +1176,27 @@ ick labels; missing features). Consider writing \pgfplotsset{compat=1.15} into
 your preamble.
  on input line 41.
 
-<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
-LaTeX Font Info:    Try loading font information for U+msa on input line 42.
+(d:/texlive/2017/texmf-dist/tex/latex/ucs/data/uni-4.def
+File: uni-4.def 2013/05/13 UCS: Unicode data U+0400..U+04FF
+)<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
+LaTeX Font Info:    Try loading font information for U+msa on input line 43.
 
 (d:/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 42.
+LaTeX Font Info:    Try loading font information for U+msb on input line 43.
 
 (d:/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+esint on input line 42.
+LaTeX Font Info:    Try loading font information for U+esint on input line 43.
 
 (d:/texlive/2017/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
-)
-(d:/texlive/2017/texmf-dist/tex/latex/ucs/data/uni-4.def
-File: uni-4.def 2013/05/13 UCS: Unicode data U+0400..U+04FF
 ) [1
 
-{d:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./neon_for
-muls.aux)
+{d:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] (./neon
+_formuls.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1207,28 +1206,31 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 11 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 36514 strings out of 492990
- 850344 string characters out of 6136334
- 1036705 words of memory out of 5000000
- 39489 multiletter control sequences out of 15000+600000
- 534686 words of font info for 37 fonts, out of 8000000 for 9000
+ 36520 strings out of 492990
+ 850425 string characters out of 6136334
+ 1037705 words of memory out of 5000000
+ 39491 multiletter control sequences out of 15000+600000
+ 536300 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,6n,96p,10403b,20587s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,6n,96p,10403b,20527s stack positions out of 5000i,500n,10000p,200000b,80000s
 {d:/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t
 2a.enc}<d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d
 :/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/texlive
-/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/texlive/2017/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/texlive/2017/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr5.pfb><d:/texlive/2017/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr7.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y7.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb><d:
-/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><d:/texlive/2
-017/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on neon_formuls.pdf (2 pages, 119117 bytes).
+/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><d:/texlive/2017/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/texlive/2017/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb><d:/texlive/2017/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr5.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr7.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><d:
+/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb><d:/texlive/2
+017/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><d:/texlive/2017/texmf-
+dist/fonts/type1/public/cm-super/sfrm1000.pfb><d:/texlive/2017/texmf-dist/fonts
+/type1/public/cm-super/sfrm1440.pfb><d:/texlive/2017/texmf-dist/fonts/type1/pub
+lic/cm-super/sfrm2488.pfb>
+Output written on neon_formuls.pdf (3 pages, 149998 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
+ 79 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

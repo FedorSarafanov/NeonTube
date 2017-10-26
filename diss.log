@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.22)  26 OCT 2017 20:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.22)  26 OCT 2017 19:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./lab-neon.tex
-(./lab-neon.tex
+**./diss.tex
+(./diss.tex
 LaTeX2e <2017-04-15>
 Babel <3.13> and hyphenation patterns for 84 language(s) loaded.
-(./diss.tex (d:/texlive/2017/texmf-dist/tex/latex/extsizes/extarticle.cls
+(d:/texlive/2017/texmf-dist/tex/latex/extsizes/extarticle.cls
 Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
 (d:/texlive/2017/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
@@ -960,235 +960,19 @@ Package tocloft Info: The document has section divisions on input line 51.
 )
 (d:/texlive/2017/texmf-dist/tex/latex/secdot/secdot.sty
 Package: secdot 2000/06/20 v1.0 section numbers with dots
-)) (./lab-neon.aux
-
-LaTeX Warning: Label `eq:3' multiply defined.
-
-)
-\openout1 = `lab-neon.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
- (d:/texlive/2017/texmf-dist/tex/latex/ucs/ucsencs.def
-File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
-)
-(d:/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count152
-\scratchdimen=\dimen293
-\scratchbox=\box49
-\nofMPsegments=\count153
-\nofMParguments=\count154
-\everyMPshowfont=\toks56
-\MPscratchCnt=\count155
-\MPscratchDim=\dimen294
-\MPnumerator=\count156
-\makeMPintoPDFobject=\count157
-\everyMPtoPDFconversion=\toks57
-) (d:/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-(d:/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-(d:/texlive/2017/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 ))
-(d:/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
+! Emergency stop.
+<*> ./diss.tex
+              
+*** (job aborted, no legal \end found)
 
-(d:/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: float package is loaded.
-Package caption Info: End \AtBeginDocument code.
-
-ABD: EveryShipout initializing macros
-Package pgfplots notification 'compat/show suggested version=true': document ha
-s been generated with the most recent feature set (\pgfplotsset{compat=1.15}).
-
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: a4paper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
-* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=483.69687pt
-* \textheight=674.33032pt
-* \oddsidemargin=-15.36449pt
-* \evensidemargin=-15.36449pt
-* \topmargin=-23.91173pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=12.0pt
-* \footskip=30.0pt
-* \marginparwidth=35.0pt
-* \marginparsep=10.0pt
-* \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-(./titlepage.tex (d:/texlive/2017/texmf-dist/tex/latex/ucs/data/uni-4.def
-File: uni-4.def 2013/05/13 UCS: Unicode data U+0400..U+04FF
-)
-(d:/texlive/2017/texmf-dist/tex/latex/ucs/data/uni-33.def
-File: uni-33.def 2013/05/13 UCS: Unicode data U+2100..U+21FF
-) [1
-
-{d:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) (./lab-neon.to
-c<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
-LaTeX Font Info:    Try loading font information for U+msa on input line 1.
-
-(d:/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 1.
-
-(d:/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for U+esint on input line 1.
-
-(d:/texlive/2017/texmf-dist/tex/latex/esint/uesint.fd
-File: uesint.fd 
-))
-\tf@toc=\write5
-\openout5 = `lab-neon.toc'.
-
- [1]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[2] (./vaxtable.tex
-\Colsep=\skip95
-PGFPlots: reading {data/vax.csv}
-PGFPlots: reading {data/vax.csv}
-PGFPlots: reading {data/vax.csv}
-PGFPlots: reading {data/vax.csv}
-PGFPlots: reading {data/vax.csv}
-) [3]
-<vax.pdf, id=55, pagebox=cropbox, 333.62039pt x 278.58078pt>
-File: vax.pdf Graphic file (type pdf)
-<use vax.pdf>
-Package pdftex.def Info: vax.pdf  used on input line 26. on input line 26.
-Package pdftex.def Info: Requested size: 483.69687pt x 403.92752pt on input lin
-e 26.
- [4 <./vax.pdf>]
-Overfull \hbox (20.79088pt too wide) in paragraph at lines 67--69
-\T2A/cmr/m/n/12 режим оказывается невозможным. Именно в этом случае $\OT1/cmr/m
-/n/12 (\OML/cmm/m/it/12 R > R[]\OT1/cmr/m/n/12 )$ \T2A/cmr/m/n/12 в системе уст
-анавливаются
- []
-
-
-Overfull \hbox (6.26144pt too wide) in paragraph at lines 72--73
-\T2A/cmr/m/n/12 разрядкой конденсатора. Действительно, нагрузочная прямая в это
-м случае не пересекается
- []
-
-
-Overfull \hbox (30.81007pt too wide) in paragraph at lines 72--73
-\T2A/cmr/m/n/12 Очевидно, амплитуда колебаний равна $\OML/cmm/m/it/12 U[] \OMS/
-cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 U[]$\T2A/cmr/m/n/12 . Как ясно из предыдущего,
- условие возникновения
- []
-
-[5] [6]
-Overfull \hbox (33.17706pt too wide) in paragraph at lines 155--156
-\T2A/cmr/m/n/12 большой напряженности электрического поля электрон на длине сво
-бодного пробега приобретает
- []
-
-
-Overfull \hbox (18.33559pt too wide) in paragraph at lines 155--156
-\T2A/cmr/m/n/12 энергию, достаточную для ионизации нейтрального атома. В резуль
-тате соударения электрона
- []
-
-
-Overfull \hbox (9.03384pt too wide) in paragraph at lines 155--156
-\T2A/cmr/m/n/12 аноду. Но сама по себе объемная ионизация электронами еще недос
-таточна для поддержания
- []
-
-[7] (./lab-neon.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+ 
 Here is how much of TeX's memory you used:
- 37042 strings out of 492990
- 935756 string characters out of 6136334
- 1203340 words of memory out of 5000000
- 39872 multiletter control sequences out of 15000+600000
- 16660 words of font info for 46 fonts, out of 8000000 for 9000
+ 35377 strings out of 492990
+ 912902 string characters out of 6136334
+ 1173048 words of memory out of 5000000
+ 38315 multiletter control sequences out of 15000+600000
+ 4846 words of font info for 17 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 77i,13n,128p,1672b,701s stack positions out of 5000i,500n,10000p,200000b,80000s
-{d:/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}<d:/tex
-live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/2017
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/texlive/2017/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/texlive/2017/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi6.pfb><d:/texlive/2017/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi8.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr10.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12
-.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/te
-xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/texlive/2017/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2017/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/texlive/2017/texmf-dist/fonts/ty
-pe1/public/cm-super/sfbx1200.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public
-/cm-super/sfbx1440.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/
-sfbx1728.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfcc1095.p
-fb><d:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><d:/tex
-live/2017/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><d:/texlive/2017/
-texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><d:/texlive/2017/texmf-dist
-/fonts/type1/public/cm-super/sfrm1200.pfb><d:/texlive/2017/texmf-dist/fonts/typ
-e1/public/cm-super/sfrm1728.pfb>
-Output written on lab-neon.pdf (8 pages, 260088 bytes).
-PDF statistics:
- 154 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 134 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 75i,1n,128p,772b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

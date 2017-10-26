@@ -8,11 +8,11 @@
 		grid=both,
 		scale=2.35,
 		% legend pos=north west,
-		grid style={line width=.1pt, draw=gray!10},
 		major grid style={line width=.2pt,draw=gray!50},
+		grid style={line width=.1pt, draw=gray!10},
 		axis lines=middle,
-		minor tick num=5,
-		xmin=-7,
+		minor tick num=4,
+		xmin=0,
 		% xmax=11,
 	    xlabel style={below right, xshift=1em},
 	    ylabel style={above left},
@@ -21,11 +21,14 @@
 		xlabel={$U_a$, В},
 		ylabel={$I_a$, мА},
 		tick style={very thick},
+		unit vector ratio*=20 20 0,
+		grid style={line width=1pt, draw=black!20},
+		major grid style={line width=.5pt,draw=black!90},	
 		% legend style={
 		% at={(rel axis cs:0,1)},
 		% anchor=north west,draw=none,inner sep=0pt,fill=gray!10}
 	]
-        \addplot [samples=100, domain=10:240] {2500/x};
+        \addplot [samples=100, domain=10:240, very thick] {2500/x};
         \addlegendentry{Кривая $P_{max}$};
 
         % \addplot [samples=100, domain=0:52, dashdotdotted] {0.05215*e^(-(x-27)^2/2/(7.649)^2)};

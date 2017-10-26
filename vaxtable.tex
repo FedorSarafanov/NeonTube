@@ -1,0 +1,66 @@
+\begin{table}[H]
+	    \caption{Снятие вольт-амперной характеристики (ВАХ) неоновой лампы}
+	    \label{tab:diod}
+	    \pgfkeys{/pgf/number format/.cd,
+		fixed,  1000 sep={\,}}
+\newlength\Colsep
+\setlength\Colsep{10pt}
+\pgfplotstableset{
+	multicolumn names, % allows to have multicolumn names
+	col sep=tab, % the seperator in our .csv file
+	precision=3,
+	% fixed zerofill, 
+	columns/u/.style={
+	column name={$U$, В},
+	},
+	columns/i/.style={
+	column name={$I$, мА},
+	},
+	empty cells with={\textbf{--}},
+	every head row/.style={
+	before row={\toprule},
+	after row={
+		\midrule}
+		},
+	every last row/.style={after row=\bottomrule},
+	every row/.style={after row=\midrule}, 
+	columns={u,i},		
+	dec sep align,
+	% dec zerofill
+	% fixed,fixed zerofill,
+	% precision=2
+	}
+\noindent\begin{minipage}[t][][t]{\textwidth}
+\begin{minipage}[t][][b]{0.2\textwidth}
+	    \pgfplotstabletypeset[
+		% skip rows between index={0}{50},
+		skip rows between index={25}{500},
+	    ]{data/vax.csv}
+\end{minipage}%\hfill
+\begin{minipage}[t][][b]{0.2\textwidth}
+	    \pgfplotstabletypeset[
+			skip rows between index={0}{25},
+			skip rows between index={50}{500},
+	    ]{data/vax.csv}
+\end{minipage}%
+\begin{minipage}[t][][b]{0.2\textwidth}
+	    \pgfplotstabletypeset[
+			skip rows between index={0}{50},
+			skip rows between index={75}{500},
+	    ]{data/vax.csv}
+\end{minipage}%
+\begin{minipage}[t][][b]{0.2\textwidth}
+	    \pgfplotstabletypeset[
+			skip rows between index={0}{75},
+			skip rows between index={100}{500},
+	    ]{data/vax.csv}
+\end{minipage}%
+\begin{minipage}[t][][b]{0.2\textwidth}
+	    \pgfplotstabletypeset[
+			skip rows between index={0}{100},
+			skip rows between index={125}{500},
+	    ]{data/vax.csv}
+\end{minipage}%
+\end{minipage}		
+
+\end{table}
