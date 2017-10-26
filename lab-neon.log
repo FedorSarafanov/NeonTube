@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.22)  26 OCT 2017 20:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.22)  26 OCT 2017 21:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1116,79 +1116,94 @@ Package pdftex.def Info: vax.pdf  used on input line 26. on input line 26.
 Package pdftex.def Info: Requested size: 483.69687pt x 403.92752pt on input lin
 e 26.
  [4 <./vax.pdf>]
-Overfull \hbox (20.79088pt too wide) in paragraph at lines 67--69
+Overfull \hbox (20.79088pt too wide) in paragraph at lines 68--70
 \T2A/cmr/m/n/12 режим оказывается невозможным. Именно в этом случае $\OT1/cmr/m
 /n/12 (\OML/cmm/m/it/12 R > R[]\OT1/cmr/m/n/12 )$ \T2A/cmr/m/n/12 в системе уст
 анавливаются
  []
 
 
-Overfull \hbox (6.26144pt too wide) in paragraph at lines 72--73
+Overfull \hbox (6.26144pt too wide) in paragraph at lines 73--74
 \T2A/cmr/m/n/12 разрядкой конденсатора. Действительно, нагрузочная прямая в это
 м случае не пересекается
  []
 
 
-Overfull \hbox (30.81007pt too wide) in paragraph at lines 72--73
+Overfull \hbox (30.81007pt too wide) in paragraph at lines 73--74
 \T2A/cmr/m/n/12 Очевидно, амплитуда колебаний равна $\OML/cmm/m/it/12 U[] \OMS/
 cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 U[]$\T2A/cmr/m/n/12 . Как ясно из предыдущего,
  условие возникновения
  []
 
 [5] [6]
-Overfull \hbox (33.17706pt too wide) in paragraph at lines 155--156
+Overfull \hbox (33.17706pt too wide) in paragraph at lines 156--157
 \T2A/cmr/m/n/12 большой напряженности электрического поля электрон на длине сво
 бодного пробега приобретает
  []
 
 
-Overfull \hbox (18.33559pt too wide) in paragraph at lines 155--156
+Overfull \hbox (18.33559pt too wide) in paragraph at lines 156--157
 \T2A/cmr/m/n/12 энергию, достаточную для ионизации нейтрального атома. В резуль
 тате соударения электрона
  []
 
 
-Overfull \hbox (9.03384pt too wide) in paragraph at lines 155--156
+Overfull \hbox (9.03384pt too wide) in paragraph at lines 156--157
 \T2A/cmr/m/n/12 аноду. Но сама по себе объемная ионизация электронами еще недос
 таточна для поддержания
  []
 
-[7] (./lab-neon.aux)
+<q5_1.pdf, id=92, pagebox=cropbox, 173.11676pt x 215.53323pt>
+File: q5_1.pdf Graphic file (type pdf)
+<use q5_1.pdf>
+Package pdftex.def Info: q5_1.pdf  used on input line 164. on input line 164.
+Package pdftex.def Info: Requested size: 106.65562pt x 132.79057pt on input lin
+e 164.
+<q5_2.pdf, id=93, pagebox=cropbox, 173.11676pt x 212.6836pt>
+File: q5_2.pdf Graphic file (type pdf)
+<use q5_2.pdf>
+Package pdftex.def Info: q5_2.pdf  used on input line 168. on input line 168.
+Package pdftex.def Info: Requested size: 106.65562pt x 131.0349pt on input line
+ 168.
+[7 <./q5_1.pdf> <./q5_2.pdf>] [8] (./lab-neon.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 37042 strings out of 492990
- 935756 string characters out of 6136334
+ 37052 strings out of 492990
+ 935922 string characters out of 6136334
  1203340 words of memory out of 5000000
- 39872 multiletter control sequences out of 15000+600000
+ 39880 multiletter control sequences out of 15000+600000
  16660 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  77i,13n,128p,1672b,701s stack positions out of 5000i,500n,10000p,200000b,80000s
 {d:/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}<d:/tex
-live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/2017
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/texlive/2017/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/texlive/2017/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi6.pfb><d:/texlive/2017/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi8.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr10.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12
-.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/te
-xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/texlive/2017/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2017/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/texlive/2017/texmf-dist/fonts/ty
-pe1/public/cm-super/sfbx1200.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public
-/cm-super/sfbx1440.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/
-sfbx1728.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfcc1095.p
-fb><d:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><d:/tex
-live/2017/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><d:/texlive/2017/
-texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><d:/texlive/2017/texmf-dist
-/fonts/type1/public/cm-super/sfrm1200.pfb><d:/texlive/2017/texmf-dist/fonts/typ
-e1/public/cm-super/sfrm1728.pfb>
-Output written on lab-neon.pdf (8 pages, 260095 bytes).
+live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><d:/texlive/2017
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/2017/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/texlive/2017/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi12.pfb><d:/texlive/2017/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi6.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi7.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+8.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/
+texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/texlive/20
+17/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/texlive/2017/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/texlive/2017/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr8.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy8.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1200.p
+fb><d:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><d:/tex
+live/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><d:/texlive/2017/
+texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb><d:/texlive/2017/texmf-dist
+/fonts/type1/public/cm-super/sfrm0600.pfb><d:/texlive/2017/texmf-dist/fonts/typ
+e1/public/cm-super/sfrm0800.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/
+cm-super/sfrm1000.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/s
+frm1200.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pf
+b>
+Output written on lab-neon.pdf (9 pages, 287782 bytes).
 PDF statistics:
- 154 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
+ 192 PDF objects out of 1000 (max. 8388607)
+ 130 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 134 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 144 words of extra memory for PDF output out of 10000 (max. 10000000)
 
