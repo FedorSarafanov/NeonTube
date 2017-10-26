@@ -1,0 +1,95 @@
+\documentclass[a4paper]{article}
+
+\usepackage{mdframed}
+
+\usepackage{geometry}
+\usepackage[english, russian]{babel}
+\usepackage{cmap}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[pdftex]{graphicx}
+{\usepackage{tikz}
+	\usepackage
+	{
+			amssymb,
+		amsfonts,
+		amsmath,
+		amsthm,
+		wrapfig,
+		makecell,
+		multirow,
+		indentfirst,
+		ulem,
+		subcaption,
+		float,
+		caption,
+		csvsimple,
+		color,
+		booktabs,
+		pgfplots,
+		pgfplotstable,
+		fancyhdr,
+		cmap,
+		esdiff
+	}  
+
+\usepackage{esint}
+\usetikzlibrary{%
+    decorations.pathreplacing,%
+    decorations.pathmorphing%
+}
+
+\usepackage[europeanresistors,americaninductors]{circuitikz}
+
+
+
+	
+\begin{document}
+\begin{figure}
+\begin{circuitikz}
+
+\draw (-1,0) to [battery1,l=$U_c$] (2,0) % батарея
+             to (2,-2)
+             to (1,-2)
+             to [pR, l=$R_н$,i<_=$I_н$] (-1,-2)
+             to (-4,-2)
+             to (-4,0)
+             to (-1,0)          
+             ; % резистор  
+\draw (-4,-2) to (-4,-4)
+	to [voltmeter, i_>=$I_1$] (-2,-4); %Вольтметр
+\draw (-4,-4) to (-4,-6) 
+to [capacitor](-2,-6)
+to (-2,-4); % Лампа
+\draw (-2,-6) to [ammeter] (0,-6)
+to [->](0,-2.2);
+
+
+\end{circuitikz}
+\caption{}
+\end{figure}
+\begin{figure}
+
+\begin{circuitikz}
+      \draw (-1,0) to [battery1,l=$U_c$] (2,0) % батарея
+             to (2,-2)
+             to (1,-2)
+             to [pR, l=$R_н$,i<_=$I_н$] (-1,-2)
+             to (-4,-2)
+             to (-4,0)
+             to (-1,0)          
+             ; % резистор  
+\draw (-4,-2) to (-4,-4)
+	to [voltmeter, i_>=$I_1$] (-2,-4); %Вольтметр
+\draw (-4,-4) to (-4,-6) 
+to [capacitor](-2,-6)
+to (-2,-4); % Лампа
+\draw (-2,-6) to [ammeter] (0,-6)
+to [->](0,-2.2);
+\draw (-2,-4) to (0,-4);
+
+\end{circuitikz}
+\caption{}
+\end{figure}
+Относительная погрешность амперметра в первом случае $\delta I= \frac{\Delta I}{i}$
+\end{document}
