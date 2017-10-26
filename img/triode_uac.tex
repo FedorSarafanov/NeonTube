@@ -1,6 +1,14 @@
 \documentclass[tikz]{standalone}
 \newcommand*{\source}{/home/osabio/tex/templates}
 \input{\source/head-img.tex}
+\usetikzlibrary{intersections}
+
+\pgfkeys{/pgfplots/linelabel/.style args={#1:#2:#3}{name path global=labelpath,execute at end plot={
+\path [name path global = labelpositionline]
+(rel axis cs:#1,0) --
+(rel axis cs:#1,1);
+\draw [help lines,text=black,inner sep=0pt,name intersections={of=labelpath and labelpositionline}] (intersection-1) -- +(#2) node [label={#3}] {};},
+}}
 
 \begin{document}
 \begin{tikzpicture}[scale=0.95]
@@ -11,7 +19,8 @@
 		grid style={line width=.1pt, draw=gray!10},
 		major grid style={line width=.2pt,draw=gray!50},
 		axis lines=middle,
-		minor tick num=5,
+		minor tick num=4,
+		unit vector ratio*=40 20 0,		
 		xmin=-7,
 		% xmax=11,
 	    xlabel style={below right, xshift=1em},
@@ -36,24 +45,24 @@
 
 		\addplot [mark=none, dashed] table[y={create col/linear regression={y=70}}] {data/triod_uac70.csv};
 		\xdef\slopeA{\pgfplotstableregressiona}
-  \addlegendentry{%
-        $S_{70}=\pgfmathprintnumber{\slopeA} $ } 
+  % \addlegendentry{%
+        % $S_{70}=\pgfmathprintnumber{\slopeA} $ } 
 
 		\addplot [mark=none, dashed] table[y={create col/linear regression={y=90}}] {data/triod_uac70.csv};
 		\xdef\slopeC{\pgfplotstableregressiona}
-  \addlegendentry{%
-        $S_{90}=\pgfmathprintnumber{\slopeC} $ } 
+  % \addlegendentry{%
+        % $S_{90}=\pgfmathprintnumber{\slopeC} $ } 
 
 
 		\addplot [mark=none, dashed] table[y={create col/linear regression={y=110}}] {data/triod_uac1100.csv};
 		\xdef\slopeB{\pgfplotstableregressiona}
-  \addlegendentry{%
-        $S_{110}=\pgfmathprintnumber{\slopeB} $ }   
+  % \addlegendentry{%
+        % $S_{110}=\pgfmathprintnumber{\slopeB} $ }   
 
 		\addplot [mark=none, dashed] table[y={create col/linear regression={y=130}}] {data/triod_uac1100.csv};
 		\xdef\slopeX{\pgfplotstableregressiona}
-  \addlegendentry{%
-        $S_{130}=\pgfmathprintnumber{\slopeX} $ }                         
+  % \addlegendentry{%
+        % $S_{130}=\pgfmathprintnumber{\slopeX} $ }                         
 
         % \addplot [samples=100, domain=0:52] {0.05215*e^(-(x-27)^2/2/(7.5)^2)};
         % \addlegendentry{$\sigma_k=7.5$}

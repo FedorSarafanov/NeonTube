@@ -10,7 +10,6 @@
 		grid style={line width=.1pt, draw=gray!10},
 		major grid style={line width=.2pt,draw=gray!50},
 		axis lines=middle,
-		minor tick num=5,
 		xmin=0,
 		% xmax=11,
 	    xlabel style={below right, xshift=1em},
@@ -19,39 +18,44 @@
 		% ymax=5,
 		xlabel={$U_a$, В},
 		ylabel={$I_a$, мА},
+		minor x tick num=4,
+		minor y tick num=4,
 		tick style={very thick},
+		unit vector ratio*=5 20 0,
+		grid style={line width=1pt, draw=black!20},
+		major grid style={line width=.5pt,draw=black!90},		
 		% legend style={
 		% at={(rel axis cs:0,1)},
 		% anchor=north west,draw=none,inner sep=0pt,fill=gray!10}
 	]
-        \addplot +[thin, smooth, mark=*, select={9}{25}] table [x=Ua, y=m7] {data/triod_vax.csv};
-        \addlegendentry{$U_c=-7$ В}
-        \addplot +[thin, smooth, mark=*, select={4}{17}] table [x=Ua, y=m3] {data/triod_vax.csv};
-        \addlegendentry{$U_c=-3$ В}
-        \addplot +[thin, smooth, mark=*, select={0}{11}] table [x=Ua, y=1] {data/triod_vax.csv};
-        \addlegendentry{$U_c=+1$ В}                
-        \addplot +[thin, smooth, mark=*, select={0}{7}] table [x=Ua, y=5] {data/triod_vax.csv};
-        \addlegendentry{$U_c=+5$ В} 
+        \addplot +[thin, smooth, mark=*, select={9}{25}] table [x=Ua, y=m7] {data/triod_vax.csv} node[pos=1,black,fill=white,inner sep=1pt,pin=135:{\color{black}\large\bf -7 вольт}] {};
+        % \addlegendentry{$U_c=-7$ В}
+        \addplot +[thin, smooth, mark=*, select={4}{17}] table [x=Ua, y=m3] {data/triod_vax.csv} node[pos=1,black,fill=white,inner sep=1pt,pin=135:{\color{black}\large\bf -3 вольт}] {};
+        % \addlegendentry{$U_c=-3$ В}
+        \addplot +[thin, smooth, mark=*, select={0}{11}] table [x=Ua, y=1] {data/triod_vax.csv} node[pos=1,black,fill=white,inner sep=1pt,pin=135:{\color{black}\large\bf 1 вольт}] {};
+        % \addlegendentry{$U_c=+1$ В}                
+        \addplot +[thin, smooth, mark=*, select={0}{7}] table [x=Ua, y=5] {data/triod_vax.csv} node[pos=1,black,fill=white,inner sep=1pt,pin=-45:{\color{black}\large\bf 5 вольт}] {};
+        % \addlegendentry{$U_c=+5$ В} 
 
 		\addplot [mark=none, dashed] table[y={create col/linear regression={y=m7}}] {data/triod_vax_m7.csv};
 		\xdef\slopeA{\pgfplotstableregressiona}
-  \addlegendentry{%
-        ${R_{i}^{-1}}=\pgfmathprintnumber{\slopeA} $ (-7 В) } 
+  % \addlegendentry{%
+  %       ${R_{i}^{-1}}=\pgfmathprintnumber{\slopeA} $ (-7 В) } 
 
 		\addplot [mark=none, dashed] table[y={create col/linear regression={y=m3}}] {data/triod_vax_m5.csv};
 		\xdef\slopeB{\pgfplotstableregressiona}
-  \addlegendentry{%
-        ${R_{i}^{-1}}=\pgfmathprintnumber{\slopeB} $ (-3 В) } 
+  % \addlegendentry{%
+  %       ${R_{i}^{-1}}=\pgfmathprintnumber{\slopeB} $ (-3 В) } 
 
 		\addplot [mark=none, dashed] table[y={create col/linear regression={y=1}}] {data/triod_vax_1.csv};
 		\xdef\slopeC{\pgfplotstableregressiona}
-  \addlegendentry{%
-        ${R_{i}^{-1}}=\pgfmathprintnumber{\slopeC} $ (+1 В) }    
+  % \addlegendentry{%
+  %       ${R_{i}^{-1}}=\pgfmathprintnumber{\slopeC} $ (+1 В) }    
 
 		\addplot [mark=none, dashed] table[y={create col/linear regression={y=5}}] {data/triod_vax_5.csv};
 		\xdef\slopeD{\pgfplotstableregressiona}
-  \addlegendentry{%
-        ${R_{i}^{-1}}=\pgfmathprintnumber{\slopeD} $ (+5 В) }    
+  % \addlegendentry{%
+  %       ${R_{i}^{-1}}=\pgfmathprintnumber{\slopeD} $ (+5 В) }    
 
         % \addplot [samples=100, domain=0:52] {0.05215*e^(-(x-27)^2/2/(7.5)^2)};
         % \addlegendentry{$\sigma_k=7.5$}
