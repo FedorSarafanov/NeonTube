@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.22)  26 OCT 2017 21:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.22)  26 OCT 2017 22:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1095,6 +1095,11 @@ File: uesint.fd
 \openout5 = `lab-neon.toc'.
 
  [1]
+Overfull \hbox (1.85156pt too wide) in paragraph at lines 13--15
+[]\T2A/cmr/m/n/12 В данной работе исследуется самостоятельный разряд в неоновой
+ лампе TH-30-2. Лампа
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1109,14 +1114,14 @@ PGFPlots: reading {data/vax.csv}
 PGFPlots: reading {data/vax.csv}
 PGFPlots: reading {data/vax.csv}
 ) [3]
-<vax.pdf, id=55, pagebox=cropbox, 333.62039pt x 278.58078pt>
+<vax.pdf, id=56, pagebox=cropbox, 333.62039pt x 278.58078pt>
 File: vax.pdf Graphic file (type pdf)
 <use vax.pdf>
 Package pdftex.def Info: vax.pdf  used on input line 26. on input line 26.
 Package pdftex.def Info: Requested size: 483.69687pt x 403.92752pt on input lin
 e 26.
  [4 <./vax.pdf>]
-<pic6.png, id=79, 149.5989pt x 79.497pt>
+<pic6.png, id=80, 149.5989pt x 79.497pt>
 File: pic6.png Graphic file (type png)
 <use pic6.png>
 Package pdftex.def Info: pic6.png  used on input line 55. on input line 55.
@@ -1207,7 +1212,7 @@ e1/public/cm-super/sfrm0800.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/
 cm-super/sfrm1000.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/s
 frm1200.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pf
 b>
-Output written on lab-neon.pdf (10 pages, 298816 bytes).
+Output written on lab-neon.pdf (10 pages, 299889 bytes).
 PDF statistics:
  196 PDF objects out of 1000 (max. 8388607)
  132 compressed objects within 2 object streams
