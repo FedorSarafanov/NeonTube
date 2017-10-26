@@ -447,6 +447,9 @@ INPUT ./vax.pdf
 INPUT ./vax.pdf
 INPUT c:/Users/ponur/.texlive2017/texmf-var/fonts/tfm/lh/lh-t2a/larm0800.tfm
 INPUT c:/Users/ponur/.texlive2017/texmf-var/fonts/tfm/lh/lh-t2a/larm0600.tfm
+INPUT pic6.png
+INPUT ./pic6.png
+INPUT ./pic6.png
 INPUT q5_1.pdf
 INPUT ./q5_1.pdf
 INPUT ./q5_1.pdf
