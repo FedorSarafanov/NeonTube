@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.22)  26 OCT 2017 20:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.22)  26 OCT 2017 20:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1185,7 +1185,7 @@ live/2017/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><d:/texlive/2017/
 texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><d:/texlive/2017/texmf-dist
 /fonts/type1/public/cm-super/sfrm1200.pfb><d:/texlive/2017/texmf-dist/fonts/typ
 e1/public/cm-super/sfrm1728.pfb>
-Output written on lab-neon.pdf (8 pages, 260088 bytes).
+Output written on lab-neon.pdf (8 pages, 260095 bytes).
 PDF statistics:
  154 PDF objects out of 1000 (max. 8388607)
  99 compressed objects within 1 object stream
