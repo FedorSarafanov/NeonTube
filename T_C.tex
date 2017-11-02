@@ -43,9 +43,11 @@
 			% anchor=north west,draw=none,inner sep=0pt,fill=gray!10}
 		]
 	        % \addplot +[mark=*, mark size=1.5pt,  only marks] plot [error bars/.cd, y dir = both, y explicit] table [x=u, y=i, y error=di, x error=du] {data/vax2.csv};
-	        \addplot +[mark=*, mark size=1.5pt,  only marks] 
 	        %plot [error bars/.cd, y dir = both, y explicit] 
-	        table [x=c, y=T] {data/table3.dat};	        
+	        \addplot +[mark=square*, mark size=2pt,  only marks] table [x=c, y=TT] {data/table_c.dat};	   	        
+
+	        \addplot +[mark=*, mark size=1.5pt,  only marks] table [x=c, y=T] {data/table_c.dat};	        
+
 	        % \addlegendentry{$U_c=-7$ В}
 	        \addplot [samples=100, domain=0:2, dashdotdotted] {2.4/2*x+0};
 % Linear model Poly1:

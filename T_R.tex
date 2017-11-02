@@ -43,9 +43,11 @@
 			% anchor=north west,draw=none,inner sep=0pt,fill=gray!10}
 		]
 	        % \addplot +[mark=*, mark size=1.5pt,  only marks] plot [error bars/.cd, y dir = both, y explicit] table [x=u, y=i, y error=di, x error=du] {data/vax2.csv};
+	        \addplot +[mark=square*, mark size=2pt,  only marks] table [x=R, y=TT] {data/table_r.dat};	   	        
+
 	        \addplot +[mark=*, mark size=1.5pt,  only marks] 
 	        %plot [error bars/.cd, y dir = both, y explicit] 
-	        table [x=R, y=T] {data/table2.dat};	        
+	        table [x=R, y=T] {data/table_r.dat};	        
 	        % \addlegendentry{$U_c=-7$ В}
 
 
@@ -54,7 +56,7 @@
 	        % \addplot [samples=100, line width=1pt, domain=107.4:240] {(x-107.4)/12.36};
 	        % \addlegendentry{Аппроксимация}
 
-	        \addplot [samples=100, domain=0:4500, dashdotdotted] {0.001031*x+0.1142};
+	        \addplot [samples=100, domain=0:4500, dashdotdotted] {0.0013*x+0.1142};
 	        % \addlegendentry{$\sigma_k=7.649$}
 
 %      f(x) = p1*x + p2

@@ -43,6 +43,8 @@
 			% anchor=north west,draw=none,inner sep=0pt,fill=gray!10}
 		]
 	        % \addplot +[mark=*, mark size=1.5pt,  only marks] plot [error bars/.cd, y dir = both, y explicit] table [x=u, y=i, y error=di, x error=du] {data/vax2.csv};
+	        \addplot +[mark=square*, mark size=2pt,  only marks] table [x=e, y=TT] {data/table_e.dat};	   	        
+
 	        \addplot +[mark=*, mark size=1.5pt,  only marks] 
 	        %plot [error bars/.cd, y dir = both, y explicit] 
 	        table [x=e, y=T] {data/table_e.dat};	        
