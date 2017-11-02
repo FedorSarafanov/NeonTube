@@ -1,0 +1,46 @@
+\begin{table}[H]
+	    \caption{Снятие вольт-амперной характеристики (ВАХ) неоновой лампы}
+	    \label{tab:diod}
+	    \pgfkeys{/pgf/number format/.cd,
+		fixed,  1000 sep={\,}}
+% \newlength\Colsep
+\setlength\Colsep{10pt}
+\xdef\Table{data/table_e.dat} 
+\pgfplotstableset{
+	multicolumn names, % allows to have multicolumn names
+	col sep=tab, % the seperator in our .csv file
+	precision=3,
+	% fixed zerofill, 
+	columns/e/.style={
+		column name={$\mathcal{E}$, В},
+	},
+	columns/t/.style={
+		column name={$t$, сек},
+	},
+	columns/n/.style={
+		column name={$n$, периодов},
+	},	
+	columns/T/.style={
+		column name={$T$, с},
+	},		
+	empty cells with={\textbf{--}},
+	every head row/.style={
+	before row={\toprule},
+	after row={
+		\midrule}
+		},
+	every last row/.style={after row=\bottomrule},
+	every row/.style={after row=\midrule}, 
+	columns={e,t,n,T},		
+	dec sep align,
+	% dec zerofill
+	% fixed,fixed zerofill,
+	% precision=2
+	}
+	\centering
+	    \pgfplotstabletypeset[
+		% skip rows between index={0}{50},
+		skip rows between index={25}{500},
+	    ]{\Table}
+
+\end{table}

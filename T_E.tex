@@ -1,0 +1,67 @@
+\documentclass[tikz]{standalone}
+\usepackage{cmap}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage{pgfplots}
+\begin{document}
+	\begin{tikzpicture}
+		    \begin{axis}[
+			grid=both,
+			scale=1.5,
+			% xmode=log,
+			grid style={line width=.1pt, draw=gray!10},
+			major grid style={line width=.2pt,draw=gray!50},
+			% axis lines=middle,
+			minor tick num=5,
+			% xmin=1000, 
+			% xmax=11,
+			% ymin=0,
+			% ymax=5,
+			ylabel={$T$, c},
+			xlabel={$\mathcal{E}$, в},
+			tick style={very thick},
+		    % scale=0.5,
+		    grid=both,
+		    grid style={line width=1pt, draw=black!20},
+		    major grid style={line width=.5pt,draw=black!90},
+		    minor y tick num=4, 
+		    minor x tick num=4,   
+		    xtick distance=20,
+		    ytick distance=1/2,
+		    % ymax = 1.8,
+		    xmin = 120,
+		    ymin = 0,
+		    % xmax = 40,
+		    % ticklabel style={font=\tiny,fill=white},    
+		    axis lines=middle, 	
+		    % xlabel style={right, xshift=1em},
+		    % ylabel style={above},	
+		    x label style={at={(axis description cs:0.5,-0.08)},anchor=north},
+		    y label style={at={(axis description cs:-0.1,.5)},rotate=90,anchor=south}		    	    		
+			% legend style={
+			% at={(rel axis cs:0,1)},
+			% anchor=north west,draw=none,inner sep=0pt,fill=gray!10}
+		]
+	        % \addplot +[mark=*, mark size=1.5pt,  only marks] plot [error bars/.cd, y dir = both, y explicit] table [x=u, y=i, y error=di, x error=du] {data/vax2.csv};
+	        \addplot +[mark=*, mark size=1.5pt,  only marks] 
+	        %plot [error bars/.cd, y dir = both, y explicit] 
+	        table [x=e, y=T] {data/table_e.dat};	        
+	        % \addlegendentry{$U_c=-7$ В}
+
+
+	        % \addplot [samples=100, domain=109.2:240] {(x-109.2)/12.38};
+	        % \addplot [samples=100, domain=106.5:240] {(x-106.5)/12.43};
+	        % \addplot [samples=100, line width=1pt, domain=107.4:240] {(x-107.4)/12.36};
+	        % \addlegendentry{Аппроксимация}
+
+	        % \addplot [samples=100, domain=0:4500, dashdotdotted] {0.001031*x+0.1142};
+	        % \addlegendentry{$\sigma_k=7.649$}
+
+%      f(x) = p1*x + p2
+% Coefficients (with 95% confidence bounds):
+%        p1 =    0.001031  (0.0009921, 0.001069)
+%        p2 =      0.1842  (0.1195, 0.2488)
+
+		    \end{axis}
+		\end{tikzpicture}	
+\end{document}
