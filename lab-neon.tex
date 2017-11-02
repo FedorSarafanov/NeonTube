@@ -12,28 +12,18 @@
 \label{sec:input}
 В данной работе исследуется самостоятельный разряд в неоновой лампе TH-30-2. Лампа представляет собой стеклянный баллон, заполненный неоном при давлении порядка 10-20 торр. Электроды у лампы в форме дисков, причём расстояние между электродами меньше диаметра электрода. Внутри лампы последовательно с электродами впаян балластный резистор с сопротивлением $R_{Ne}=10$ кОм.  
 Целью данной работы является успешная сдача зачета по общефизу
+
 % \begin{gather*}
-% \frac{C R_{0} \Delta \mathcal{E} \rho \left(- R \left(U_{0} - U_\text{г}\right) + R \left(U_{0} - U_\text{з}\right) + R_{0} \left(U_\text{г} - \mathcal{E}\right) - R_{0} \left(U_\text{з} - \mathcal{E}\right)\right)}{\left(- R \left(U_{0} - U_\text{г}\right) + R_{0} \left(U_\text{г} - \mathcal{E}\right)\right) \left(R \left(U_{0} - U_\text{з}\right) - R_{0} \left(U_\text{з} - \mathcal{E}\right)\right)}
+% \left|{\frac{C R_{0} \Delta \mathcal{E} \rho \left(R + R_{0}\right) \left(U_\text{г} - U_\text{з}\right)}{\left(R U_{0} - R U_\text{г} - R_{0} U_\text{г} + R_{0} \mathcal{E}\right) \left(R U_{0} - R U_\text{з} - R_{0} U_\text{з} + R_{0} \mathcal{E}\right)}}\right|
 % +\\+
-% (-) \frac{C \Delta U_\text{г} \rho \left(R + R_{0}\right)}{R \left(U_{0} - U_\text{з}\right) - R_{0} \left(U_\text{з} - \mathcal{E}\right)}
+% \left|{\frac{C \Delta U_\text{г} \rho \left(R + R_{0}\right)}{R U_{0} - R U_\text{з} - R_{0} U_\text{з} + R_{0} \mathcal{E}}}\right|
 % +\\+
-% \frac{C \Delta U_\text{з} \rho \left(R + R_{0}\right)}{R \left(U_{0} - U_\text{г}\right) - R_{0} \left(U_\text{г} - \mathcal{E}\right)}
+% \left|{\frac{C \Delta U_\text{з} \rho \left(R + R_{0}\right)}{R U_{0} - R U_\text{г} - R_{0} U_\text{г} + R_{0} \mathcal{E}}}\right|
 % +\\+
-% \frac{C \Delta R \rho \left(- \left(U_{0} - U_\text{г}\right) \left(R \left(U_{0} - U_\text{з}\right) - R_{0} \left(U_\text{з} - \mathcal{E}\right)\right) + \left(U_{0} - U_\text{з}\right) \left(R \left(U_{0} - U_\text{г}\right) - R_{0} \left(U_\text{г} - \mathcal{E}\right)\right)\right)}{\left(R \left(U_{0} - U_\text{г}\right) - R_{0} \left(U_\text{г} - \mathcal{E}\right)\right) \left(R \left(U_{0} - U_\text{з}\right) - R_{0} \left(U_\text{з} - \mathcal{E}\right)\right)}
+% \left|{\frac{C R_{0} \Delta R \rho \left(U_{0} - \mathcal{E}\right) \left(U_\text{г} - U_\text{з}\right)}{\left(R U_{0} - R U_\text{г} - R_{0} U_\text{г} + R_{0} \mathcal{E}\right) \left(R U_{0} - R U_\text{з} - R_{0} U_\text{з} + R_{0} \mathcal{E}\right)}}\right|
 % +\\+
-% \frac{C \Delta R_0 \rho \left(- \left(U_{0} - U_\text{г}\right) \left(R \left(U_{0} - U_\text{з}\right) - R_{0} \left(U_\text{з} - \mathcal{E}\right)\right) + \left(U_{0} - U_\text{з}\right) \left(R \left(U_{0} - U_\text{г}\right) - R_{0} \left(U_\text{г} - \mathcal{E}\right)\right)\right)}{\left(R \left(U_{0} - U_\text{г}\right) - R_{0} \left(U_\text{г} - \mathcal{E}\right)\right) \left(R \left(U_{0} - U_\text{з}\right) - R_{0} \left(U_\text{з} - \mathcal{E}\right)\right)}
+% \left|{\frac{C R_{0} \Delta R_0 \rho \left(U_{0} - \mathcal{E}\right) \left(U_\text{г} - U_\text{з}\right)}{\left(R U_{0} - R U_\text{г} - R_{0} U_\text{г} + R_{0} \mathcal{E}\right) \left(R U_{0} - R U_\text{з} - R_{0} U_\text{з} + R_{0} \mathcal{E}\right)}}\right|
 % \end{gather*}
-\begin{gather*}
-\left|{\frac{C R_{0} \Delta \mathcal{E} \rho \left(R + R_{0}\right) \left(U_\text{г} - U_\text{з}\right)}{\left(R U_{0} - R U_\text{г} - R_{0} U_\text{г} + R_{0} \mathcal{E}\right) \left(R U_{0} - R U_\text{з} - R_{0} U_\text{з} + R_{0} \mathcal{E}\right)}}\right|
-+\\+
-\left|{\frac{C \Delta U_\text{г} \rho \left(R + R_{0}\right)}{R U_{0} - R U_\text{з} - R_{0} U_\text{з} + R_{0} \mathcal{E}}}\right|
-+\\+
-\left|{\frac{C \Delta U_\text{з} \rho \left(R + R_{0}\right)}{R U_{0} - R U_\text{г} - R_{0} U_\text{г} + R_{0} \mathcal{E}}}\right|
-+\\+
-\left|{\frac{C R_{0} \Delta R \rho \left(U_{0} - \mathcal{E}\right) \left(U_\text{г} - U_\text{з}\right)}{\left(R U_{0} - R U_\text{г} - R_{0} U_\text{г} + R_{0} \mathcal{E}\right) \left(R U_{0} - R U_\text{з} - R_{0} U_\text{з} + R_{0} \mathcal{E}\right)}}\right|
-+\\+
-\left|{\frac{C R_{0} \Delta R_0 \rho \left(U_{0} - \mathcal{E}\right) \left(U_\text{г} - U_\text{з}\right)}{\left(R U_{0} - R U_\text{г} - R_{0} U_\text{г} + R_{0} \mathcal{E}\right) \left(R U_{0} - R U_\text{з} - R_{0} U_\text{з} + R_{0} \mathcal{E}\right)}}\right|
-\end{gather*}
 \newpage
 \section{Исследование неоновой лампы}
 \subsection{Снятие ВАХ неоновой лампы}
@@ -177,8 +167,8 @@ C\diff{U}{t}+\frac{U-U_0}{R_0} = \frac{\mathcal{E}-U}{R}
 \begin{equation}
 \label{tau:2}
 	\tau_2 =  \rho C \ln { 
-	\frac{(U_{\text{з}}  -  U_0) R+ (U_{\text{з}})}
-	{(U_{\text{г}}  -  U_0) R+ (U_{\text{г}})}
+	\frac{(U_{\text{з}}  -  U_0) R+ (U_{\text{з}}-\mathcal{E})R_0}
+	{(U_{\text{г}}  -  U_0) R+ (U_{\text{г}}-\mathcal{E})R_0}
 	}
 \end{equation}
 
@@ -222,6 +212,12 @@ $\delta I=\frac{10\cdot10^3\cdot\text{Ом}}{10\cdot \text{МОм}}=10^{-3}$
 \begin{center}
 $ \delta U =\frac{U_a}{U_{Ne}}=\frac{R_a}{R_{Ne}} = 10^{-3} $
 \end{center}
+\newpage
+\section{Вывод}
+Мы сняли ВАХ неоновой лампы, эксперимент в рамках погрешностей совпал с теоретической моделью. 
+
+Были определены коэффициенты $U_0=(107\pm 1)\,B$ и $R_0=(12.36\pm 0.09)\,\text{кОм}$
+
 
 \end{document}
 
