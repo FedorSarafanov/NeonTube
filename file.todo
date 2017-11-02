@@ -1,0 +1,8 @@
+>>> from sympy import *
+>>> vz=symbols('U_\text{з}')
+>>> vg=symbols('U_\text{г}')
+>>> R0=symbols('R_0')
+>>> R=symbols('R')
+>>> rho=symbols('\rho')
+>>> C=symbols('C')
+>>> E=symbols('\mathcal{E}')
