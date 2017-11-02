@@ -7,3 +7,4 @@
 \contentsline {section}{\numberline {3}\IeC {\CYRO }\IeC {\cyrt }\IeC {\cyrv }\IeC {\cyre }\IeC {\cyrt }\IeC {\cyrery } \IeC {\cyrn }\IeC {\cyra } \IeC {\cyrv }\IeC {\cyro }\IeC {\cyrp }\IeC {\cyrr }\IeC {\cyro }\IeC {\cyrs }\IeC {\cyrery }}{11}
 \contentsline {subsection}{\numberline {3.1}\IeC {\textnumero }1}{11}
 \contentsline {subsection}{\numberline {3.2}\IeC {\textnumero }5}{12}
+\contentsline {section}{\numberline {4}\IeC {\CYRV }\IeC {\cyrery }\IeC {\cyrv }\IeC {\cyro }\IeC {\cyrd }}{13}
