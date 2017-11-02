@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.22)  2 NOV 2017 22:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.9.22)  2 NOV 2017 23:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1229,10 +1229,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 37681 strings out of 492990
- 944822 string characters out of 6136334
+ 37690 strings out of 492990
+ 945108 string characters out of 6136334
  1219415 words of memory out of 5000000
- 40475 multiletter control sequences out of 15000+600000
+ 40484 multiletter control sequences out of 15000+600000
  16660 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  77i,14n,128p,1672b,703s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1255,7 +1255,7 @@ xlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><d:/texlive/2017
 /texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><d:/texlive/2017/texmf-dis
 t/fonts/type1/public/cm-super/sfrm1200.pfb><d:/texlive/2017/texmf-dist/fonts/ty
 pe1/public/cm-super/sfrm1728.pfb>
-Output written on lab-neon.pdf (15 pages, 297679 bytes).
+Output written on lab-neon.pdf (15 pages, 298283 bytes).
 PDF statistics:
  226 PDF objects out of 1000 (max. 8388607)
  154 compressed objects within 2 object streams
