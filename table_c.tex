@@ -37,10 +37,20 @@
 	% fixed,fixed zerofill,
 	% precision=2
 	}
-	\centering
+\centering
+\noindent\begin{minipage}[c][][c]{1.1\textwidth}
+\begin{minipage}[t][][b]{0.5\textwidth}
 	    \pgfplotstabletypeset[
 		% skip rows between index={0}{50},
-		skip rows between index={25}{500},
+		skip rows between index={5}{10},
 	    ]{\Table}
+\end{minipage}%\hfill
+\begin{minipage}[t][][b]{0.5\textwidth}
+	    \pgfplotstabletypeset[
+			skip rows between index={0}{5},
+			skip rows between index={50}{500},
+	    ]{\Table}
+\end{minipage}%
+\end{minipage}	
 
 \end{table}
