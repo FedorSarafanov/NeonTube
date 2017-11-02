@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.10.8)  2 NOV 2017 22:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.10.8)  2 NOV 2017 22:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1183,16 +1183,16 @@ e 96.
 <q5_1.pdf, id=128, pagebox=cropbox, 173.11676pt x 215.53323pt>
 File: q5_1.pdf Graphic file (type pdf)
 <use q5_1.pdf>
-Package pdftex.def Info: q5_1.pdf  used on input line 210. on input line 210.
+Package pdftex.def Info: q5_1.pdf  used on input line 222. on input line 222.
 Package pdftex.def Info: Requested size: 225.16267pt x 280.34116pt on input lin
-e 210.
+e 222.
 <q5_2.pdf, id=129, pagebox=cropbox, 173.11676pt x 212.6836pt>
 File: q5_2.pdf Graphic file (type pdf)
 <use q5_2.pdf>
-Package pdftex.def Info: q5_2.pdf  used on input line 214. on input line 214.
+Package pdftex.def Info: q5_2.pdf  used on input line 226. on input line 226.
 Package pdftex.def Info: Requested size: 225.16267pt x 276.63466pt on input lin
-e 214.
- [11] [12 <./q5_1.pdf> <./q5_2.pdf>] [13] (./lab-neon.aux)
+e 226.
+ [11] [12 <./q5_1.pdf> <./q5_2.pdf>] [13] [14] (./lab-neon.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1223,10 +1223,10 @@ texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/font
 s/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/
 cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm17
 28.pfb>
-Output written on lab-neon.pdf (14 pages, 295043 bytes).
+Output written on lab-neon.pdf (15 pages, 297452 bytes).
 PDF statistics:
- 223 PDF objects out of 1000 (max. 8388607)
- 152 compressed objects within 2 object streams
+ 226 PDF objects out of 1000 (max. 8388607)
+ 154 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  159 words of extra memory for PDF output out of 10000 (max. 10000000)
 
